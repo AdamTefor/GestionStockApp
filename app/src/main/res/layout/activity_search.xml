@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- ✅ Titre -->
+    <TextView
+        android:text="🔍 Rechercher un produit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ✅ Barre de recherche personnalisée -->
+    <EditText
+        android:id="@+id/editSearch"
+        android:hint="Tapez le nom du produit"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:padding="14dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ✅ Résultats -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:padding="4dp"
+        android:elevation="4dp" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- ✅ Titre -->
+    <TextView
+        android:id="@+id/titleUserList"
+        android:text="👤 Liste des utilisateurs"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ✅ Nombre total -->
+    <TextView
+        android:id="@+id/textUserCount"
+        android:text="Nombre total : 0"
+        android:textSize="16sp"
+        android:textColor="#555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ✅ Liste des utilisateurs -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textUsers"
+            android:text="Chargement..."
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <!-- ✅ Bouton retour -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:text="⬅ Retour à l'accueil"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

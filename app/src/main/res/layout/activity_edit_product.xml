@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <!-- Titre -->
+    <TextView
+        android:text="📝 Modifier le produit"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Nom du produit -->
+    <EditText
+        android:id="@+id/editProductName"
+        android:hint="Nom du produit"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Quantité -->
+    <EditText
+        android:id="@+id/editProductQty"
+        android:hint="Quantité"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Bouton mise à jour -->
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:text="✅ Mettre à jour"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_700"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

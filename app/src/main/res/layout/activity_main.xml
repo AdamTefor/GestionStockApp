@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ppp"
+        android:contentDescription="Logo" />
+
+    <!-- Inputs -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:hint="Nom du produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:hint="Quantité"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <!-- Bouton ajouter -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:text="Ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black" />
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/textViewListTitle"
+        android:text="Liste des produits"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ✅ Zone scrollable pour produits -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+    <!-- Boutons de navigation -->
+    <Button
+        android:id="@+id/buttonGoToAdd"
+        android:text="Formulaire d'ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_700" />
+
+    <Button
+        android:id="@+id/buttonGoToEdit"
+        android:text="Modifier un produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/purple_700" />
+
+    <Button
+        android:id="@+id/buttonGoToSearch"
+        android:text="Rechercher un produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/purple_700" />
+
+    <Button
+        android:id="@+id/buttonGoToStats"
+        android:text="Voir les statistiques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/purple_700" />
+    <Button
+        android:id="@+id/buttonUserList"
+        android:text="👥 Voir les utilisateurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/textSecondary"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
